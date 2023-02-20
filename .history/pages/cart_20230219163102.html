@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <header class="header">
+          <div class="header-logo">
+            <a href="../index.html">
+              <img src="../img/Logo-removebg-preview.png" alt=""
+            /></a>
+          </div>
+          <nav class="header-menu">
+            <a href="../index.html" class="active">Home</a>
+            <a href="#">Page</a>
+            <a href="../pages/shop.html">Shop</a>
+            <a href="../pages/blog.html">Blog</a>
+            <a href="../pages/contact.html">Contact Us</a>
+          </nav>
+          <div class="header-configure">
+            <div class="header-icon">
+              <a href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+              <a href="../pages/login.html">
+                <i class="fa fa-user" aria-hidden="true"> </i>
+              </a>
+              <a href="#">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i>
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section class="breadcrumb-bg">
+        <div class="container">
+          <div class="breadcrubm-main">
+            <h1 class="breadcrubm-title">Cart</h1>
+            <ul class="breadcrubm">
+              <li class="breadcrubm-item">
+                <a href="../index.html">Home /</a>
+              </li>
+              <li class="breadcrubm-item">
+                <a class="active" href="./product-detail.html">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cart">
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th class="pro-thumnail">Thumbnail</th>
+                <th class="pro-title">Product</th>
+                <th class="pro-price">Price</th>
+                <th class="pro-quantity">Quantity</th>
+                <th class="pro-subtotal">Total</th>
+                <th class="pro-remove">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pro-thumnail">
+                  <img src="../img/product-shop-1.webp" alt="" />
+                </td>
+                <td class="pro-title"><a href="#">ULTRA 4D</a></td>
+                <td class="pro-price">$295.00</td>
+                <td class="pro-quantity">
+                  <div class="product-detail__quantity">
+                    <div class="quantity cart-quantity">
+                      <span class="dec">-</span>
+                      <input type="text" value="1" />
+                      <span class="inc">+</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="pro-subtotal">$295.00</td>
+                <td class="pro-remove">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="pro-thumnail">
+                  <img src="../img/product-shop-2.webp" alt="" />
+                </td>
+                <td class="pro-title"><a href="">ULTRA4D HURRICANES</a></td>
+                <td class="pro-price">$300.00</td>
+                <td class="pro-quantity">
+                  <div class="product-detail__quantity">
+                    <div class="quantity cart-quantity">
+                      <span class="dec">-</span>
+                      <input type="text" value="1" />
+                      <span class="inc">+</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="pro-subtotal">$300.00</td>
+                <td class="pro-remove">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="pro-thumnail">
+                  <img src="../img/product-shop-3.webp" alt="" />
+                </td>
+                <td class="pro-title"><a href="#"> Adidas 4DFWD2 2</a></td>
+                <td class="pro-price">$295.00</td>
+                <td class="pro-quantity">
+                  <div class="product-detail__quantity">
+                    <div class="quantity cart-quantity">
+                      <span class="dec">-</span>
+                      <input type="text" value="1" />
+                      <span class="inc">+</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="pro-subtotal">$295.00</td>
+                <td class="pro-remove">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="cart-update">
+            <div class="cart-apply__coupon">
+              <form action="">
+                <div class="cart-apply__input">
+                  <input type="text" placeholder="Enter Your Coupon Code" />
+                  <button class="cart-apply__btn">Apply Coupon</button>
+                </div>
+              </form>
+            </div>
+            <div class="cart-apply__update-cart">
+              <button class="cart-apply__btn">Update Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-total">
+        <div class="container">
+          <div class="cart-total__box">
+            <h3 class="cart-total__title">Cart Totals</h3>
+            <div class="cart-calculate">
+              <div class="cart-calculate__left">
+                Sub Total <span>$230</span>
+              </div>
+            </div>
+            <div class="cart-calculate">
+              <div class="cart-calculate__left">
+                Sub Total <span>$230</span>
+              </div>
+            </div>
+            <div class="cart-calculate">
+              <div class="cart-calculate__left">
+                Sub Total <span>$230</span>
+              </div>
+            </div>
+          </div>
+          <button class="cart-apply__btn">Update Cart</button>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-left">
+            <div class="footer-column">
+              <div class="footer-logo">
+                <img src="../img/Logo-removebg-preview.png" alt="Logo" />
+              </div>
+            </div>
+            <div class="footer-content">
+              <ul class="footer-menu">
+                <li>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>184 Main Rd
+                  E, St Albans VIC 3021, Australia
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>Mail Us:
+                  yourmail@gmail.com
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i>Phone: + 00 254
+                  254565
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-col mr">
+              <h5 class="footer-title">Categories</h5>
+              <div class="footer-content">
+                <ul class="footer-menu">
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Ecommerce</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Shopify </a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Prestashop</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Opencart </a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Magento</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Jigoshop</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col mr">
+              <h5 class="footer-title">Information</h5>
+              <div class="footer-content">
+                <ul class="footer-menu">
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Home</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">About Us</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Contact Us</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Returns & Exchanges</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Shipping & Delivery</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col ml">
+              <h5 class="footer-title">Quick Links</h5>
+              <div class="footer-content">
+                <ul class="footer-menu">
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Store Location</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">My Account</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Orders Tracking</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Size Guide</a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Shopping Rates </a>
+                  </li>
+                  <li class="footer-list">
+                    <a href="#" class="footer-link">Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
